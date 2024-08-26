@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Patrick+Hand+SC&display=swap');
+
+:root {
+    --cor-0:#00aac8;
+    --cor-1:#015E6F;
+    --cor-2:#01343D;
+    --cor-3:#B50268;
+    --cor-4:#011A1F;
+     
+    --fonte: 'patrick-hand', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor-2);
+    font-family: var(--fonte);
+    background-image: linear-gradient(to bottom, var(--cor-0), var(--cor-4));
+}
+
+h1, h2 {
+    font-family: var(--fonte)
+}
+
+header {
+    box-shadow: 0px 0px 10px black;
+    background-image: linear-gradient(to bottom, var(--cor-2), var(--cor-4));
+    color: white;
+    background-color: var(--cor-4);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    margin: 0px 20px 40px 20px;
+}
+
+header > p {
+    margin: 0px 20px;
+}
+
+nav {
+    padding: 2px;
+    background-color: var(--cor-4);
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    transition-duration: .5s;
+    text-decoration: none;
+    background-color: var(--cor-3);
+    color: white;
+    margin:5px;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+nav > a:hover {
+    background-color: var(--cor-0);
+    padding: 5px 30px;
+    box-shadow:0px 0px 10px rgba(255, 255, 255, 0.407);
+}
+
+.imagem {
+    width: 100%;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.423);
+}
+
+main {
+    padding: 0px;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffedf8;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.423);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+main h1 {
+    color: var(--cor-3);
+    padding: 20px 30px 10px 30px;
+}
+
+main h2 {
+    color: var(--cor-4);
+    padding: 0px 30px;
+    }
+
+main P {
+    text-align: justify;
+    text-indent: 30px;
+    padding: 20px 30px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    padding: 10px;
+    color: white;
+    background-color: var(--cor-3);
+}
